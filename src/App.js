@@ -6,28 +6,14 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
  
 
 function App() {
   return (
     <div className="App">
-    <ClassClick/>
-    <FunctionClick/>
-    <Counter/>
-
-    <Message/>
-
-    <Greet name = "abdul"  college = "IIT">
-      <p> this is children property</p>
-    </Greet>
-
-    <Greet name = "ansari" college = "Oxford">
-      <button>click me</button>
-    </Greet>
-    <Greet />
-
-    <Welcome name ="tanveer" alias = "ansari"/>
-
+    <EventBind/>
+    
     </div>
   );
 }
