@@ -18,11 +18,13 @@ clickHandler(){
 }
 
     render() {
-        //using bind im tying clickhandler to this keyword
+        //using bind im tying clickhandler to this keyword -- binding in render method
         return (
             <div>
                 <div>{this.state.message}</div>
-                <button onClick = {this.clickHandler.bind(this)}>click</button>  
+                { /*<button onClick = {this.clickHandler.bind(this)}>click</button>  */}
+               <button onClick = {() => this.clickHandler()}>click</button>  
+
             </div>
         )
     }
