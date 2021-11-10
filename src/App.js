@@ -17,7 +17,7 @@ import Stylesheet from './components/Stylesheet';
 function App() {
   return (
     <div className="App">
-    <Stylesheet/>
+    <Stylesheet  enabled = {false}/>
     <Table/>
     <NameList/>
     <UserGreeting/>
